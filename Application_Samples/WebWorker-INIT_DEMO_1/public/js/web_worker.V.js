@@ -1,0 +1,1 @@
+(()=>{var o={580:o=>{const r="undefined"!=typeof window&&!!window.Worker;o.exports=r}},r={};function e(n){var t=r[n];if(void 0!==t)return t.exports;var s=r[n]={exports:{}};return o[n](s,s.exports,e),s.exports}(()=>{const o=e(580);console.log("Web Workers Available: "+o)})()})();

@@ -114,3 +114,11 @@ dist
 package-lock.json
 ./package-lock.json
 ./**/package-lock.json
+
+
+.clinic
+.clinic/
+.clinic/*
+./.clinic
+./.clinic/
+./.clinic/*
