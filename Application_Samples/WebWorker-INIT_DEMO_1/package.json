@@ -1,15 +1,23 @@
 {
   "name": "webworker-init_demo_1",
   "version": "1.0.0",
-  "description": "",
+  "description": "yeaeey",
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "app": "node index.js"
+    "app": "node index.js",
+    "build_app": "webpack --config webpack.config.js",
+		"clinic_doctor" : "clinic doctor --on-port 'autocannon localhost:3000' -- node index.js",
+		"clinic_bubbleprof" : "clinic bubbleprof --on-port ‘autocannon localhost:3000’ -- node index.js"
   },
   "author": "[_V_]",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
   }
 }

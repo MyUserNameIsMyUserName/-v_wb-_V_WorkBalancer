@@ -5,6 +5,19 @@
 	border: 1px solid;
 	margin: 1em;
 	padding: 1em;
+	transition: .25s linear all;
+	-webkit-transition: .25s linear all;
+	-moz-transition: .25s linear all;
+	-ms-transition: .25s linear all;
+	-o-transition: .25s linear all;
+}
+
+*:hover {
+	transition: .5s linear all;
+	-webkit-transition: .5s linear all;
+	-moz-transition: .5s linear all;
+	-ms-transition: .5s linear all;
+	-o-transition: .5s linear all;
 }
 
 html, body {
@@ -68,4 +81,15 @@ img {
 	margin: 0 auto;
 	box-shadow: 0 0 100px lime;
 	background: darkorange;
+}
+
+
+body input:hover,
+body input_title:hover,
+body h2:hover,
+body h3:hover,
+body cli_msg:hover,
+body p:hover,
+body img:hover {
+	box-shadow: 0 10px 10px rgb(255 0 0)!important;
 }
