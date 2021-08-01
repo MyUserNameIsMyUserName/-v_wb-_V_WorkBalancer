@@ -28,12 +28,13 @@ Well mostly these are separate projects so each one should contain it's own desc
 previews (some failing probably  hahaha still non in there but  
  failing they are expected to do).  
 
-| Folder | Sample Name | Complexity
-| ------ | ------ | ----- | 
+| Folder | Sample Name | Complexity |
+| ------ | ------ | ------ |
 | WebWorker_TD_01 | Most Basic Web Worker Example | 2 - low |  
 | WebWorker_TD_02 | Sending Commands For Execution | 3 - medium | 
 | WebWorker_TD_03 | Looping a task list to multiple ww. | 4 - high |  
 | WebWorker_TD_04 | Using WW to make WW to loop. | 5 - top |   
-| WebWorker_TD_04 | WW with o | X - top+ | 
-  
-#### <-> -> WebWorker-INIT_DEMO_1
+| WebWorker_TD_04 | WW with own WW in RAF()  | X - top+ | 
+| ------ | ------ | ------ |
+|  | TYEAY
+ #### <-> -> WebWorker-INIT_DEMO_1
