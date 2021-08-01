@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "app": "node index.js"
   },
   "author": "[_V_]",
   "license": "MIT",
