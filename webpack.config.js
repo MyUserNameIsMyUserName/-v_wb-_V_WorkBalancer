@@ -4,8 +4,7 @@ module.exports = {
 	target: "web",
 	mode: 'production',
   entry: {
-		_v_: './src/_V_.js',
-		web_worker:'./src/web_worker.js',
+		root_app: './src/root_app.js',
 	},
 	output: {
 		path: path.resolve(__dirname, "public/js"),
