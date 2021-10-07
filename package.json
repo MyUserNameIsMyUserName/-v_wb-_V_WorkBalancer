@@ -4,16 +4,17 @@
   "description": "yeaeey",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "app": "node index.js",
-    "build_app": "webpack --config webpack.config.js",
-		"clinic_doctor" : "clinic doctor --on-port 'autocannon localhost:3000' -- node index.js",
-		"clinic_bubbleprof" : "clinic bubbleprof --on-port ‘autocannon localhost:3000’ -- node index.js"
+    "test": "jest",
+    "_run": "node index.js",
+    "build": "webpack --config webpack.config.js",
+    "clinic_doctor": "clinic doctor --on-port 'autocannon localhost:3000' -- node index.js",
+    "clinic_bubbleprof": "clinic bubbleprof --on-port 'autocannon localhost:3000' -- node index.js"
   },
   "author": "[_V_]",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
+    "jest": "^27.2.4",
     "path": "^0.12.7"
   },
   "devDependencies": {

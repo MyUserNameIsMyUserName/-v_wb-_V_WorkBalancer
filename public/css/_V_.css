@@ -2,23 +2,8 @@
 	margin: 0;
 	padding: 0;
 	line-height: 1em;
-	border: 1px solid;
-	margin: 1em;
-	padding: 1em;
-	transition: .25s linear all;
-	-webkit-transition: .25s linear all;
-	-moz-transition: .25s linear all;
-	-ms-transition: .25s linear all;
-	-o-transition: .25s linear all;
 }
 
-*:hover {
-	transition: .5s linear all;
-	-webkit-transition: .5s linear all;
-	-moz-transition: .5s linear all;
-	-ms-transition: .5s linear all;
-	-o-transition: .5s linear all;
-}
 
 html, body {
 	font-size: 100%;
@@ -30,11 +15,7 @@ html, body {
 
 h2 {
 	line-height: 1.5em;
-	letter-spacing: 10px;
-	text-decoration: underline #00ff00;
-	text-decoration-style: dashed;
-	color: lime;
-	background: radial-gradient(#34652b, rgb(0 0 0));
+	letter-spacing: 2px;
 }
 
 h3 {
@@ -84,12 +65,106 @@ img {
 }
 
 
-body input:hover,
-body input_title:hover,
-body h2:hover,
-body h3:hover,
-body cli_msg:hover,
-body p:hover,
-body img:hover {
-	box-shadow: 0 10px 10px rgb(255 0 0)!important;
+
+v_page {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+v_section {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border: 1px solid orange;
+  padding: 1em;
+}
+
+vgroup {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid purple;
+  padding: 1em;
+  gap: 1em;
+}
+
+v_block {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid darkred;
+  padding: 1em;
+  flex: 1;
+  gap: 1em;
+}
+
+v_title {
+  display: grid;
+  padding: 1em;
+  border: 1px solid blue;
+  grid-template-areas:
+      "info info info do";
+  justify-content: space-between;
+}
+
+v_info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  padding: inherit;
+  border: 1px solid teal;
+}
+
+main_text {
+  font-size: 2em;
+  border: 1px solid orange;
+  padding: .5em;
+  display: inline-flex;
+}
+
+sub_text {
+  font-size: 1em;
+  border: 1px solid #795548;
+  padding: .5em 1em;
+  display: inline-flex;
+}
+
+actions {
+  display: flex;
+  grid-area: do;
+  flex-direction: row;
+  flex: 1;
+  border: 1px solid green;
+  padding: 1em;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+
+button {
+  display: flex;
+  height: auto;
+  flex: 0;
+  flex-direction: row;
+  white-space: nowrap;
+  padding: 1em;
+}
+
+
+vcontent {
+  display: flex;
+  flex: 1;
+  padding: 1em;
+  border: 1px solid;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+
+
+v_ui_sample_elem {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: orange;
 }

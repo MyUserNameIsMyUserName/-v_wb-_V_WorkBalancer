@@ -1,14 +1,67 @@
-<h2>&#9978; Application_Samples</h2>
-<h3>WebWorker-INIT_DEMO_1</h3>
-<input_title>Utilize WebWorker for the LOOP:</input_title>
-<input type="checkbox" id="sendToWebWorker"  />
-<input_title>Number of loops:</input_title>
-<input type="number" id="loopValue" value="25" min="1" max="100">
-<mini_info>[number] x 1Mil. Loops</mini_info>
-<button type="button" id="startLoopButton" onclick="startLoop()">Start Loop</button>
-<!-- APPLY STYLE BEFORE JS-->
+<v_page>
+  <v_section>
+    <vGroup>
+      <v_block name='UI_Worker'>
+        <v_title>
+          <v_info>
+            <main_text>🌀 UI Work Limiter </main_text>
+            <sub_text>Provides an CPU optimized way of working with DOM</sub_text>
+          </v_info>
+          <actions>
+            <button id="startDemo" onclick="vAppUI.startUpdates()">🔥 Start </button>
+            <button id="startDemo" onclick="vAppUI.stopUpdates()">⛔ Stop</button>
+          </actions>
+        </v_title>
+        <vContent>
+          Running Mode [ interval / requestAnimationFrame ]
+          <input type="text" id="uiWorkLimiterType" value="raf"/>
+          Updates Number [ perSecond / perFrame ]
+          <input type="number" id="uiWorkLimiterValue" value="15000" oninput="vAppUI.setUpdatesNumber(this.value)"/>
+          AUTOSTART 
+          <input type="checkbox" id="uiWorkLimiterAutostart" checked="true"/>
+          Target FPS : <input type="number" value="60" name="targetFPS" oninput="vAppUI.setTargetFPS(this.value)" />
+          Current FPS : <value name="currentFPS">0000</value>
+          <button id="startDemo" onclick="vAppUI.startFindOptimal()">📐 Figure Optimal </button>
+        </vContent>
+      </v_block>
+      <v_block name='UI_Work_Generator'>
+        <v_title>
+          <v_info>
+            <main_text>📡 UI Work Generator </main_text>
+            <sub_text>Generates Random UI updates for Limiter to do.</sub_text>
+          </v_info>
+          <actions>
+            <button id="startDemo" onclick="start()">🚀 Start </button>
+            <button id="startDemo" onclick="start()">🧯 Stop</button>
+          </actions>
+        </v_title>
+        <vContent>
+          <input type="text" id="uiWorkGeneratorValue" value="2" />
+        </vContent>
+      </v_block>
+    </vGroup>
+  </v_section>
+  <v_section>
+    <v_ui_sample_elem></v_ui_sample_elem>
+  </v_section>
+  <v_section>
+    <v_ui_sample_elem></v_ui_sample_elem>
+  </v_section>
+  <v_section>
+    <v_ui_sample_elem></v_ui_sample_elem>
+  </v_section>
+  <v_section>
+    <v_ui_sample_elem></v_ui_sample_elem>
+  </v_section>
+  <v_section>
+    <v_ui_sample_elem></v_ui_sample_elem>
+  </v_section>
+  <v_section>
+    <v_ui_sample_elem></v_ui_sample_elem>
+  </v_section>
+  <v_section>
+    <v_ui_sample_elem></v_ui_sample_elem>
+  </v_section>
+</v_page>
 <link rel="stylesheet" href="/css/_V_.css">
-
-<!-- ALERT TO SHOW IT WORKS -->
-<script src="/js/_v_.V.js"></script>
-<script src="/js/web_worker.V.js"></script>
+<script src="/js/root_app.V.js"></script>

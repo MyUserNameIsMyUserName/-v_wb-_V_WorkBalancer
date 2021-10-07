@@ -9,6 +9,6 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "public/js"),
 		filename: "[name].V.js",
-		//clean: true,
+		clean: true,
 	},
 };
